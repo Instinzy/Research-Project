@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuABTbs90g9fFQzu8eBFny5UIIcJ7KBCuplnRUSkk7n7fPJpGF6D0zvZw8&s=10&fbclid=IwY2xjawIEY8RleHRuA2FlbQIxMAABHQSB2Ja5EWP3pn1XiHrjzP_TUNYG8Rk47NEPIAmMNiXMte4MWhGOSqAI9A_aem_FnmoxuhxO7oZsYBBNOKRMA');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+    color: #333;
+}
+
+header {
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuABTbs90g9fFQzu8eBFny5UIIcJ7KBCuplnRUSkk7n7fPJpGF6D0zvZw8&s=10&fbclid=IwY2xjawIEY8RleHRuA2FlbQIxMAABHQSB2Ja5EWP3pn1XiHrjzP_TUNYG8Rk47NEPIAmMNiXMte4MWhGOSqAI9A_aem_FnmoxuhxO7oZsYBBNOKRMA');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Login/Registration Form Styles */
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2, .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Lesson Section */
+.lesson {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lesson h2 {
+    color: #333;
+}
+
+.animated-section {
+    background-color: #f4f7fc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animation-box {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    transition: background-color 1s ease;
+}
+
+.lesson-description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.lesson-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson-buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+/* Add Lesson Form */
+.add-lesson-form, .suggest-lesson, .lesson-list {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-lesson-form h3, .suggest-lesson h3, .lesson-list h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.add-lesson-form textarea, .suggest-lesson textarea {
+    height: 120px;
+}
+
+/* View Lessons List */
+#lesson-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lesson-list ul li {
+    background-color: #f4f7fc;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+#lesson-list button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lesson-list button:hover {
+    background-color: #e04e29;
+}
+
+/* Help & Settings Section */
+#help-section, #settings-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#help-section button, #settings-section button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#help-section button:hover, #settings-section button:hover {
+    background-color: #45a049;
+}
