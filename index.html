@@ -1,78 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Learning Lesson</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <h1>Animated Learning Lesson</h1>
     <div class="nav-icons">
-        <a href="javascript:void(0);" onclick="showHelp()">Help</a>
-        <a href="javascript:void(0);" onclick="showSettings()">Settings</a>
-        <a href="javascript:void(0);" onclick="logout()">Logout</a>
+        <a href="#help-section">Help</a>
+        <a href="#settings-section">Settings</a>
+        <a href="#logout">Logout</a>
     </div>
 </header>
     
-    <!-- Main Content Section -->
-    <div id="main-content" class="hidden">
-        <div class="lesson">
-            <h2>Lesson 1: Introduction to HTML</h2>
-            <div class="animated-section">
-                <p>This section will show an animated learning lesson.</p>
-                <div id="animation" class="animation-box"></div>
-            </div>
-            <div class="lesson-description">
-                <p>HTML (HyperText Markup Language) is the standard language for creating web pages. This lesson will help you get started with HTML syntax and structure.</p>
-            </div>
-            <div class="lesson-buttons">
-                <button onclick="startLesson()">Start Lesson</button>
-                <button onclick="nextLesson()">Next Lesson</button>
-            </div>
+<!-- Main Content Section -->
+<div id="main-content">
+    <div class="lesson">
+        <h2>Lesson 1: Introduction to HTML</h2>
+        <div class="animated-section">
+            <p>This section will show an animated learning lesson.</p>
+            <div id="animation" class="animation-box"></div>
         </div>
-        <!-- Add Lesson Form -->
-        <div class="add-lesson-form">
-            <h3>Add a New Lesson</h3>
-            <input type="text" id="lesson-title" placeholder="Lesson Title" required>
-            <textarea id="lesson-description" placeholder="Lesson Description" required></textarea>
-            <button onclick="addLesson()">Add Lesson</button>
+        <div class="lesson-description">
+            <p>
+                HTML (HyperText Markup Language) is the standard language for creating web pages. This lesson will help
+                you get started with HTML syntax and structure.
+            </p>
         </div>
-
-        <!-- View Lessons -->
-        <div id="lesson-list" class="lesson-list">
-            <h3>All Lessons</h3>
-            <ul id="lessons">
-                <!-- Dynamic lesson list will appear here -->
-            </ul>
-        </div>
-
-        <!-- Suggest Lesson -->
-        <div class="suggest-lesson">
-            <h3>Suggest a Lesson</h3>
-            <textarea id="suggest-lesson" placeholder="What lesson would you like to see?" required></textarea>
-            <button onclick="suggestLesson()">Suggest</button>
+        <div class="lesson-buttons">
+            <button>Start Lesson</button>
+            <button>Next Lesson</button>
         </div>
     </div>
 
-    <!-- Help Section -->
-    <div id="help-section" class="hidden">
-        <h2>Help Instructions</h2>
-        <p>Follow the lessons step-by-step to learn HTML, CSS, JavaScript, and more!</p>
-        <button onclick="closeHelp()">Close</button>
+    <!-- Add Lesson Form -->
+    <div class="add-lesson-form">
+        <h3>Add a New Lesson</h3>
+        <input type="text" id="lesson-title" placeholder="Lesson Title" required>
+        <textarea id="lesson-description" placeholder="Lesson Description" required></textarea>
+        <button>Add Lesson</button>
     </div>
 
-    <!-- Settings Section -->
-    <div id="settings-section" class="hidden">
-        <h2>Settings</h2>
-        <p>Adjust your preferences here.</p>
-        <button onclick="closeSettings()">Close</button>
+    <!-- View Lessons -->
+    <div id="lesson-list" class="lesson-list">
+        <h3>All Lessons</h3>
+        <ul id="lessons">
+            <li>Lesson 1: Introduction to HTML</li>
+            <li>Lesson 2: Basics of CSS</li>
+            <li>Lesson 3: JavaScript Fundamentals</li>
+        </ul>
+    </div>
+
+    <!-- Suggest Lesson -->
+    <div class="suggest-lesson">
+        <h3>Suggest a Lesson</h3>
+        <textarea id="suggest-lesson" placeholder="What lesson would you like to see?" required></textarea>
+        <button>Suggest</button>
     </div>
 </div>
 
-<script src="scripts.js"></script>
+<!-- Help Section -->
+<div id="help-section">
+    <h2>Help Instructions</h2>
+    <p>Follow the lessons step-by-step to learn HTML, CSS, JavaScript, and more!</p>
+    <a href="#main-content">Back to Lessons</a>
+</div>
+
+<!-- Settings Section -->
+<div id="settings-section">
+    <h2>Settings</h2>
+    <p>Adjust your preferences here.</p>
+    <a href="#main-content">Back to Lessons</a>
+</div>
 
 </body>
 </html>
